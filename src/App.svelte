@@ -23,7 +23,7 @@
 		<Thumbnail>
 			{#each images as image, index (index)}
 			<span>
-				<img src={image.src} on:mousedown={() => setLightbox(index)} alt={image.desc} width="160" height="160" />
+				<img class="hover-effect" src={image.src} on:mousedown={() => setLightbox(index)} alt={image.desc} width="160" height="160" />
 			</span>
 			{/each}
 		</Thumbnail>
@@ -32,14 +32,10 @@
 </main>
 
 <style>
-	:root {
-		--alignment: center;
+	.hover-effect:hover {
+		transform: scale(1.1);
+		transition: transform 0.3s ease, opacity 0.3s ease;
+		opacity: 0.9;
 	}
-
-	main {
-		text-align: var(--alignment);
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
+	
 </style>
