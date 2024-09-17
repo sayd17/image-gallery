@@ -1,0 +1,11 @@
+:root {
+  --button-bg-color: #e1e8f0;
+  --button-hover-bg-color: #b2cbe6;
+  --button-text-color: #fff;
+  --border-top-left-radius: 5px;
+  --border-bottom-left-radius: 5px;
+  --border-top-right-radius: 5px;
+  --border-bottom-right-radius: 5px;
+  --button-padding: 5px 5px;
+  --button-border: none;
+}
